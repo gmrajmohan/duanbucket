@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  
+  
+}
+.courseCardBoxShadow{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background: #fff;
+}
+.accordion {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+
+  cursor: pointer;
+
+  user-select: none;
+
+  align-items: center;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in;
+}
+
+.accordion.open .accordion-content {
+  max-height: max-content; /* Set to a sufficiently large value to accommodate your content */
+}
+.slider-container {
+  display: block;
+  overflow: hidden
+}
+ .slick-next{
+  background-color: rgb(201, 201, 201) !important;
+  right: -80px !important;
+  z-index: 10000;
+  top : 40% !important;
+}
+.slick-prev{
+  background-color: rgb(201, 201, 201) !important;
+  left: -80px !important;
+  z-index: 10000;
+  top : 40% !important;
+}
+.slick-prev:before{
+  display: none;
+}
+.slick-next:before{
+  display: none;
+}
+
+.splittedbg
+{
+  background: linear-gradient(
+    to right,
+    #0970b2 0%,
+    #0970b2 60.5%,
+    #193f58 40%,
+    #193f58 100%
+  );
+  padding: 40px 0px 40px 0px;
+}
+
+.accordion-content-topic-covered {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+
+}
+.accordion-content-topic-covered.active {
+  height: 70px;
+  /* border: solid 1px red; */
+}
+
+.virutal-course-title{
+  
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+.virutal-course-title.active {
+ 
+  /* background-color:  #E31E24; */
+  /* color: white; */
+}
+.faqbox {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.overviewpg span
+{
+  font-weight: 500 !important;
+}
+
+.bannerTextLeading{
+  font-size: 40px;
+  line-height: 45px !important;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+
+.splittedbg
+{
+  background: linear-gradient(
+    to bottom,
+    #0970b2 0%,
+    #0970b2 44%,
+    #0970b2 20%,
+    #0970b2 100%
+  );
+  padding: 20px 0px 20px 0px;
+}
+.accordion-content-topic-covered.active
+{
+  height: auto;
+  padding-bottom: 10px;
+}
+.bannerTextLeading{
+  font-size: 25px;
+  line-height: 25px !important;
+}
+
+}
+
+.menu-stream-shadow{
+  box-shadow: 0px 0px 5px 0px #00000026;
+
+}
+.mobilemenu-wrapper {
+  height: 0;
+  overflow: hidden;
+  box-shadow: none; /* Initial box-shadow value */
+  transition: height 0.5s ease-in-out;
+}
+
+.mobilemenu-wrapper.active {
+ height: auto;
+}
+
+.box{
+  overflow: hidden;
+  box-shadow: none;
+  border-radius: 0px;
+  transition: border-radius 0.2s ease-in-out , box-shadow 0.5s ease-in-out;
+}
+.box.box-active {
+  max-height: max-content;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adjust the box-shadow values as needed */
+  border-radius: 5px;
+}
+
+.ProjectManagement{
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+.ProjectManagement.active{
+  height: max-content;
+  margin-bottom: 5px;
+}
+
+.content-banchmark{
+  background-color: rgb(208, 208, 208);
+  box-shadow: 0px 0px 4px 3px rgb(214, 214, 214);
+}
+.tab-banchmark {
+  box-shadow: 0px 0px 4px 3px rgb(214, 214, 214);
+}
+
+
+
+
+
+
+
+
+
