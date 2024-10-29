@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../../../../git/dreamzone.co.in"
+		},
+		{
+			"name": "partner.cloudkampus.com",
+			"path": "../../../../git/partner.cloudkampus.com"
+		},
+		{
+			"path": "../../../../git/caddcentre.com"
+		},
+		{
+			"path": "../../../../git/easyhire"
+		},
+		{
+			"path": "../../../../git/cloudkampus.com"
+		},
+		{
+			"name": "synergy",
+			"path": "../../../virtual/synergy"
+		},
+		{
+			"name": "ssr",
+			"path": ".."
+		}
+	]
+}
